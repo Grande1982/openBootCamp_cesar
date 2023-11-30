@@ -1,0 +1,4 @@
+1-java con string y hibernate
+2-git y gitHub
+3-postgresSQL y MySQL--> BD relacionales
+4-MondoDB y FireBase --> BD No relacionales
