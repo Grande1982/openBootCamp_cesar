@@ -22,24 +22,28 @@ public class EmployeeTest {
                 "grande",
                 "ex@gmail.com",
                 32,
-                4000d,
+                (double) 4000.0,
                 true,
                 LocalDate.of(1950,12,25),
                 LocalDateTime.now());
 
+        //empezamos a transacion con bd
+        session.beginTransaction();
 
-
+        //guardamos los objetos
         session.save(employee1);
+
+        //insertamos los cambio en la bd
+        session.getTransaction().commit();
+
         session.close();
         sessionFactory.close();
         HibernateUtil.shutdown();
 
-    }
-
-    @Test
-    void insertData(){
 
 
     }
+
+
 
 }

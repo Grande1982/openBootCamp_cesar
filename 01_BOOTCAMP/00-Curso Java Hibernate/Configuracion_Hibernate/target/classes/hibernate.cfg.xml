@@ -17,12 +17,13 @@
         <!--    con el create te crea la tabla cada vez que se arranca-->
         <!--    sino queremos eso pondremos update en vez de create-->
         <property name="hibernate.hbm2ddl.auto">create</property>
-
         <!--    Para importar múltiples archivos sql utilizamos:-->
-        <!--    <property name="hibernate.hbm2ddl.import_files">import.sql,data.sql</property>-->
+        <!--  <property name="hibernate.hbm2ddl.import_files">import.sql,data.sql</property>-->
+        <property name="hibernate.hbm2ddl.import_files">data.sql, data2.sql</property>
 
         <!-- entities -->
         <mapping class="org.example.entities.Employee"/>
+        <mapping class="org.example.entities.Car"/>
 
 
     </session-factory>

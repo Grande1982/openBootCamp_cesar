@@ -12,8 +12,7 @@ import java.time.LocalDateTime;
 @Table (name = "ob_employees") //opcional
 public class Employee implements Serializable {
 
-    byte x = 10;
-    int[] var10 = new int[5];
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //se encarga hibernate de generar lo ids autoincremental
    private Long id;
