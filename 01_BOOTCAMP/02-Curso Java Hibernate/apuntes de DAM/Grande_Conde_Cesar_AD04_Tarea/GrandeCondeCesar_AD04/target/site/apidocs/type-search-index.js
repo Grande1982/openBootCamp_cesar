@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"BaseDatosIdiomas_v2","l":"Profesores"},{"p":"BaseDatosIdiomas_v2","l":"ProyectoIdioma"},{"p":"BaseDatosIdiomas_v2","l":"Tutorias"}];updateSearchResults();
