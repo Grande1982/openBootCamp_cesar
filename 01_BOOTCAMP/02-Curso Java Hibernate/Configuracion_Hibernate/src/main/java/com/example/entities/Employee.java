@@ -52,6 +52,10 @@ public class Employee implements Serializable {
         this.nickNames = nickNames;
     }
 
+    @OneToOne(cascade = CascadeType.ALL)
+            @JoinColumn (name = "car_id", foreignKey = @ForeignKey(name = "car_fk"))
+    Car coche;
+
     public Employee() {
     }
 
