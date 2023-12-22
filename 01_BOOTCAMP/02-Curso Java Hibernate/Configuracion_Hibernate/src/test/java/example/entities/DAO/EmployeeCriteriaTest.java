@@ -53,4 +53,11 @@ class EmployeeCriteriaTest {
     }
 
 
+    @Test
+    void findByccCesarTest() {
+
+        List<Employee> employees = dao.findByccCesar(1800);
+        System.out.println(employees);
+    }
+
 }

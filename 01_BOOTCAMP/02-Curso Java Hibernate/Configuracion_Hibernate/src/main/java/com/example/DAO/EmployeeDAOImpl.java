@@ -223,4 +223,26 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
         return true;
     }
+
+    @Override
+    public List<Employee> findByccCesar(Integer cc) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Employee> criteria = builder.createQuery("from Employee INNER JOIN Car");
+;;
+        Root<Employee> root = criteria.from(Employee.class);
+
+
+        Predicate filter = builder.equal(root.get("cc"), cc);
+
+        criteria.select(root).where(filter);
+
+        // 2. query
+        List<Employee> employees = session.createQuery(criteria).list();
+
+        session.close();
+        return employees;
+
+    }
 }

@@ -17,15 +17,17 @@ class EmployeeDAOImplTest {
     }
 
     @Test
-    void findAllCesar() {
+    void findAllCesarTest() {
 
         List<Employee> employees = dao.findAll();
         System.out.println(employees);
     }
 
+
     @Test
-    void testFindAllCesar() {
-        List<Employee> employees = dao.findAllCesar();
+    void findByccCesarTest() {
+
+        List<Employee> employees = dao.findByccCesar(1800);
         System.out.println(employees);
     }
 }

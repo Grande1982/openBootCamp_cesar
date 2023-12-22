@@ -95,4 +95,7 @@ public interface EmployeeDAO {
      */
     boolean deleteById(Long id);
 
+    List<Employee> findByccCesar(Integer cc);
+
+
 }
